@@ -1,0 +1,8 @@
+.env
+/.phalcon/
+.htrouter
+/vendor/
+test.csv
+test2.txt
+app/config/config.php
+app/config/sentry.php

@@ -1,0 +1,106 @@
+<table align="center" width="690px">
+    <tr>
+        <td>               
+             <img width="690px" src="<?php echo $data_template->banner; ?>"><br><br><br>
+        </td> 
+    </tr>
+
+    <tr>
+        <td style="padding-left: 35px; padding-right: 35px;text-align: center;">
+            <h1 style="font-size: 30px;line-height: 2px;color: <?php echo $data_template->button_profile->background_color; ?>;font-family: 
+            'edo' !important;font-weight: 400 !important;margin-top:20px;"><img width="200px" src="https://athleticgym.s3.us-west-2.amazonaws.com/ttl_bienvenido.png"></h1>
+            <p style="font-size: 16px;line-height: 2px;color: <?php echo $data_template->colour_text; ?>;font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;font-weight: 400 !important;margin-top:26px;">ERES PARTE DEL CLUB</p>
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding-left: 89px; padding-right: 89px;">    
+            <p style="margin-top:30px;font-weight: bold !important;font-size: 15px;line-height: 20px;color: <?php echo $data_template->colour_text; ?>;font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;">
+            Estamos felices que te unas a <?php echo $data_template->name_company; ?>. Ahora tienes acceso a nuestra plataforma en donde podrás comprar tu plan favorito, ingresar a tu APP Athletic, hacer reservas y aprovechar todos los beneficios que tiene <?php echo $data_template->name_company; ?> para tí.</p> <br>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-left: 89px; padding-right: 89px;"> 
+            <div style="background: #F5F2F6;padding: 30px;">
+                <h4 style="font-weight: bold !important;font-size: 15px;line-height: 20px;color: <?php echo $data_template->colour_text; ?>;font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;">INFORMACIÓN DE TU CUENTA</h4>
+                <p style="font-weight: bold !important;font-size: 15px;line-height: 20px;color: <?php echo $data_template->colour_text; ?>;font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;">Tu usuario</p>
+                <p style="font-size: 15px;line-height:0%;color: <?php echo $data_template->colour_text; ?>;font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;"><b><?php echo $email; ?></b></p> <br>
+            </div>  
+            
+        </td>
+    </tr>
+
+
+    <tr>
+        <td align="center" style="font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;">
+            <a href="<?php echo $data_template->url; ?>" target="_blank"  style="background-color: <?php echo $data_template->button_profile->background_color; ?>;border: none;color: <?php echo $data_template->button_profile->colour_text; ?>;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 15px;width: 250px;margin-bottom: 66px;margin-top: 16px;">IR A MI PERFIL</a>
+        </td>
+    </tr>
+    <tr style="background: <?php echo $data_template->colour_text; ?>;font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 21%;
+        margin: -48 280;">
+        <td width="80% ">
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <table style=" width: 90%; margin-top: 10px; margin-bottom: 10px;" align="center">
+                <tr>
+                    <td width="100%" style="text-align: left;">
+                        <a href="<?php echo $data_template->footer->url; ?>" target="_black" style="text-decoration: none;"><img src="<?php echo $data_template->footer->logo; ?>" style="width: 99px;"></a>
+                    </td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <?php foreach($data_template->footer->social_networks as $value){ ?>
+                        <td><a style="margin: 10px;" href="<?php echo $value->link; ?>" target="_blank"><img src="<?php echo $value->img; ?>"></a></td>
+                        <td>&nbsp;&nbsp;</td>
+                    <?php } ?>
+                </tr>
+            </table><br><br>
+            <table style="margin-left: 12px;width: 50%; margin-top: 10px; margin-bottom: 10px; color: #FFFFFF;">
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <?php foreach($data_template->footer->menu as $value){ ?>
+                        <td><a href="<?php echo $value->link; ?>" target="_blank" style="color: #FFFFFF;text-decoration: none; font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;font-size: 15px;"><?php echo $value->name; ?></a></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <?php } ?>
+                </tr>
+            </table><br><br><br><br>
+
+            <table style=" width: 90%; margin-top: 10px; margin-bottom: 10px;" align="center">
+                <tr>
+                    <td>
+                        <a target="_blank" href ="<?php echo $data_template->footer->whatsapp->url; ?>" style="color: #FFFFFF;font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;font-size: 13px;text-decoration: none;"><img src="<?php echo $data_template->footer->whatsapp->logo; ?>"><?php echo $data_template->footer->whatsapp->number; ?></a>
+                    </td>
+                    <td style="text-align: end;">
+                        <a style="color: #FFFFFF;font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;font-size: 13px;">Descarga la App</a>
+                    </td>
+                </tr>
+            </table>
+            <table style=" width: 90%; margin-top: 10px; margin-bottom: 10px;" align="center">
+                <tr>
+                    <td>
+                        <a href ="<?php echo $data_template->footer->msj->url; ?>" style="color: #FFFFFF;font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;font-size: 13px;text-decoration: none;"><img src="<?php echo $data_template->footer->msj->logo; ?>"> <?php echo $data_template->footer->msj->correo; ?></a>
+                    </td>
+                    <td style="text-align: end;">
+                        <a target="_blank" href ="<?php echo $data_template->footer->download->apple->url; ?>"><img src="<?php echo $data_template->footer->download->apple->logo; ?>"></a>
+                    </td>
+                    <td style="text-align: end;">
+                    <a target="_blank" href ="<?php echo $data_template->footer->download->android->url; ?>"><img src="<?php echo $data_template->footer->download->android->logo; ?>"></a>
+                    </td>
+                </tr>
+            </table>
+            <table style=" width: 90%; margin-top: 10px; margin-bottom: 10px;" align="center">
+                <tr>
+                    <td>
+                        <hr style="color: #FFFFFF;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-align: center; color: #FFFFFF;font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;font-size: 13px;">Todos los derechos reservados <?php echo date("Y"); ?> / <?php echo $data_template->name_company; ?></p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

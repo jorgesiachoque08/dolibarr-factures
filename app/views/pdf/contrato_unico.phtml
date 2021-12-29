@@ -1,0 +1,414 @@
+<table style="width: 100%;height: 30px; margin: auto; font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif !important;">
+    <tr>
+        <td colspan="2" style="width: 70%; height: 30px;  margin: 6 20; font-size: 18px; line-height: 20px;">
+            <p>Sede compra: Sitio Web</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" style="width: 70%; height: 30px; background-color: #000; margin: 6 20; font-size: 18px; line-height: 20px;">
+            <p style="color:#ffffff;">1 OBJETO DEL CONTRATO</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            
+            <table style="width: 95%; position: relative; height: 30px; font-size: 15px;" align="center">
+                <tr>
+                    <td colspan="2">
+                        <p><b>Fecha contrato:</b> <?php echo $contract_date; ?></p>
+                    </td>
+                    <td>
+                        <p><b>Fecha de inicio:</b> <?php echo $date_ini; ?></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p><b>Nombre:</b> <?php echo $name; ?></p>
+                    </td>
+                    <td colspan="2">
+                        <p><b>documento de identidad:</b> <?php echo $document_number; ?></p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="3">
+                        <p><b>Fecha de nacimiento:</b> <?php echo $birthdate; ?></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p><b>Dirección:</b> <?php echo $address; ?></p>
+                    </td>
+                    <td>
+                        <p><b>Ciudad:</b> <?php echo $city; ?></p>
+                    </td>
+                    <td>
+                        <p><b>Teléfono celular:</b> <?php echo $phone; ?></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <p><b>Correo electrónico:</b> <?php echo $email; ?></p>
+                    </td>
+                </tr>
+    
+                <?php $count = count($plans_data); foreach($plans_data as $plan){ ?>
+                    
+                    <?php if($count > 1){?>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                    <?php }?>
+                    
+                    <tr>
+                        <td colspan="2">
+                            <p><b>Plan contratado:</b> <?php echo $plan['contracted_plan']; ?></p>
+                        </td>
+                        <td>
+                            <p><b>Duración:</b> <?php echo $plan['duration']; ?> </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <p><b>Valor del plan:</b> <?php echo $plan['plan_price']; ?>
+                            </p>
+                        </td>
+                        <td>
+                            <p><b>Cuota de inscripción:</b> <?php echo $plan['inscription_cuote']; ?></p>
+                        </td>
+                    </tr>
+                
+                <?php }?>
+                <!-- <tr>
+                    <td colspan="2">
+                        <p><b>Venta realizada por:</b> <?php //echo $name; ?></p>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <p><b>Campaña:</b> <?php //echo $name; ?></p>
+                    </td>
+                </tr> -->
+        
+            </table>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <table style="width: 100%;height: 35px;margin: auto;">
+                <tr style="background-color: black;font-weight: bold;border-collapse: collapse;">
+                    <td>
+                        <p style="color:white; font-size: 18px;"> 2 CONSENTIMIENTO INFORMADO</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td colspan="2" style="margin:6 24;">
+            <table style="width: 95%;" align="center">
+                <tr>
+                    <td style="text-align: justify;">
+                        <p style="font-size: 15px; line-height: 30px; text-align: justify;">
+                        Certifico que he sido cuestionado sobre mis antecedentes médicos, familiares y personales que pueden
+                        ocasionar riesgo para mi salud durante la práctica del entrenamiento y sé que debo asistir a la
+                        Evaluación médica antes de iniciar mi programa de entrenamiento. A la vez, notifico que toda la
+                        información que he suministrado
+                        ha sido veraz y no queda ninguna adicional por revelar, por lo cual me hago responsable por
+                        cualquier hecho que
+                        ocurra, en caso de no respetar las indicaciones dadas después del diligenciamiento de este
+                        documento. También, he
+                        entendido que se me ha ofrecido la posibilidad de realizarme una evaluación clínica para identificar
+                        los posibles
+                        factores de riesgo osteomuscular y cardiovascular que puedo presentar durante la práctica del
+                        ejercicio y que pueden
+                        afectar mi salud. Así mismo, entiendo que esta evaluación puede ayudarme a tener mayor seguridad
+                        para mi salud y a
+                        lograr mis objetivos. Además, me comprometo a reportar al Club Médico Deportivo BODYTECH, cualquier
+                        cambio en
+                        mi estado de salud que pueda influir en mi práctica de entrenamiento Teniendo en cuenta lo anterior,
+                        si decido
+                        entrenar sin realizarme una evaluación médica, asumo toda responsabilidad por cualquier lesión que
+                        pueda
+                        presentar.
+                    </p><br>
+                    </td>
+                </tr>
+            </table>  
+        </td>
+    </tr>
+    
+    <tr>
+        <td colspan="2">
+            
+            <table style="width: 100%;height: 35px;margin: auto;">
+                <tr style="background-color: black;font-weight: bold;border-collapse: collapse;">
+                    <td>
+                        <p style="color:white; font-size: 18px;"> 3 TERMINOS Y CONDICIONES</p>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+        <table style="width: 95%;" align="center">
+        <tr>
+            <td style="text-align: justify;">
+            <p style="font-size: 15px; line-height: 30px;">
+                Al firmar este contrato, el AFILIADO se obliga a consultar los
+                TÉRMINOS Y CONDICIONES DE LA PRESTACIÓN DEL SERVICIO, en la página web <a href="https://www.bodytech.com.co">https://www.bodytech.com.co</a> los cuales hacen parte
+                integral
+                éste contrato.
+            </p><br>
+            </td>
+        </tr>
+        </table>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            
+            <table style="width: 100%;height: 35px;margin: auto;">
+                <tr style="background-color: black;font-weight: bold;border-collapse: collapse;">
+                    <td>
+                        <p style="color:white; font-size: 18px;"> 4 PAGO DERECHOS DE ACCESO Y USO</p>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <table style="width: 95%;" align="center">
+                <tr>
+                    <td style="text-align: justify;">
+                        <p style="font-size: 15px; line-height: 30px;">
+                            En ningún caso los derechos de acceso o cuota de inscripción serán reembolsables. El AFILIADO
+                            reconoce
+                            que la Cuota de Inscripción al Plan no es vitalicia y en caso de terminación del presente contrato,
+                            la inscripción se perderá. En caso de presentarse el evento anterior, la tarifa correspondiente será ajustada en
+                            proporción al
+                            impuesto, la tarifa o contribución correspondiente.
+                        </p><br>
+                    </td>
+                </tr>
+            </table>
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <table style="width: 95%;" align="center">
+                <tr>
+                    <td style="text-align: justify;">
+                        <p style="font-size: 15px; line-height: 30px;">
+                        Parágrafo 1:
+                            Los pagos no tienen relación alguna con la frecuencia de la asistencia para realizar sus rutinas de
+                            entrenamiento médico deportivo en las sedes BODYTECH, por ende, no habrá lugar a devoluciones a
+                            menos
+                            que se generen las circunstancias descritas en los
+                            TÉRMINOS Y CONDICIONES DE LA PRESTACIÓN DEL
+                            SERVICIO,
+                            es decir, se seguirá haciendo el cobro independientemente de si hay asistencia o no a la sede.
+                        </p><br>
+                    </td>
+                </tr>
+            </table>
+            
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <table style="width: 100%;height: 35px;margin: auto;">
+                <tr style="background-color: black;font-weight: bold;border-collapse: collapse;">
+                    <td>
+                        <p style="color:white; font-size: 18px;"> 5 FORMAS PAGOS MENSUALES PLAN ELITE, CORPORATIVO E IMPUESTOS</p>
+                    </td>
+                </tr>
+            </table>
+            <table style="width: 95%;" align="center">
+                <tr>
+                    <td style="text-align: justify;">
+                        <p style="font-size: 15px; line-height: 30px;">
+                                El valor de la cuota mensual de Afiliación se cobrará mensualmente con un primer débito bimestre
+                                anticipado y
+                                el segundo débito y subsiguientes meses anticipados. Adicionalmente se incrementará el primero (1)
+                                de febrero
+                                de cada año de acuerdo al Índice de Precios al Consumidor (IPC). Se entenderá que el pago fue
+                                realizado en
+                                forma oportuna cuando éste se efectúe dentro de los cinco (5) primeros días calendario del mes en
+                                curso
+                                PLAN CORPORATIVO: LA EMPRESA BENEFICIARIA DEL CONVENIO Y/O BENEFICIARIO DEL CONVENIO
+                                realizará el pago de la afiliación según lo convenido en la propuesta comercial. El AFILIADO, LA
+                                EMPRESA
+                                BENEFICIARIA DEL CONVENIO Y/O BENEFICIARIO DEL CONVENIO se obligan al pago oportuno del PLAN
+                                escogido a la fecha de suscripción del presente convenio, que es la suma convenida en la tabla de
+                                tarifas de la
+                                propuesta comercial <br>
+                                <strong> Parágrafo 1:</strong>
+                                La tarifa establecida en este contrato se encuentra exenta del Impuesto sobre el Valor Agregado
+                                (IVA). No obstante, en el evento en que el Gobierno Nacional, Departamental o Municipal, llegare a
+                                gravar la
+                                prestación de los servicios ofrecidos por el PRESTADOR mediante el establecimiento de impuestos,
+                                tarifas o
+                                contribuciones aplicables, este será asumido por EL AFILIADO, LA EMPRESA BENEFICIARIA DEL
+                                CONVENIO Y/O BENEFICIARIO DEL CONVENIO
+                        </p><br>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            
+            <table style="width: 100%;height: 35px;margin: auto;">
+                <tr style="background-color: black;font-weight: bold;border-collapse: collapse;">
+                    <td>
+                        <p style="color:white; font-size: 18px;">6 CONGELACIONES</p>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <table style="width: 95%;" align="center">
+                <tr>
+                    <td style="text-align: justify;">
+                        <p style="font-size: 15px; line-height: 30px;">
+                            <u><b>CONGELACIÓN PLAN ESTÁNDAR</b> </u>
+                                : EL AFILIADO que adquiera un PLAN anual,
+                                tendrá́
+                                derecho a congelar,
+                                sin costo alguno, el servicio dos (2) veces durante la vigencia de su PLAN. Él término de cada
+                                congelación, no
+                                podrá́
+                                ser inferior a 7 días, ni superior a (30) treinta días. EL AFILIADO que adquiera un PLAN semestral,
+                                tendrá́
+                                derecho a congelar el servicio por una (1) sola vez sin costo alguno. Él término de la(s)
+                                congelación no
+                                podrá́
+                                ser inferior a (7) siete días ni superior a (30) treinta días. EL AFILIADO que adquiera un PLAN
+                                Trimestral o
+                                inferior solo
+                                podrá́
+                                congelar la prestación del servicio pagando el valor establecido por cada día de suspensión
+                                siempre y cuando el plan se encuentre activo. Él término de suspensión en ningún caso
+                                podrá́
+                                ser inferior a (7)
+                                siete días. EL AFILIADO que adquiera un PLAN mes a mes, no
+                                tendrá́
+                                derecho a congelar su contrato.
+                                <br><br><u><b>CONGELACIÓN PLAN ELITE</b></u> 
+                                : EL AFILIADO del plan ELITE,
+                                podrá́
+                                suspender (congelar) temporalmente su
+                                plan de afiliación por un periodo mínimo de (7) siete días y hasta (30) treinta días calendario.
+                                Durante el tiempo
+                                congelado, El AFILIADO pagará el 25% del valor de cada uno de los días congelados por concepto de
+                                mantenimiento de sede, equipos y mantenimiento de inscripción. Los días del mes que no se encuentren
+                                dentro
+                                de las fechas de congelación, serán pagados al 100% de la cuota mensual de su afiliación al Plan
+                                Elite.
+                                <br><br><b><u>PARÁGRAFO 1:</u></b> 
+                                En los planes ELITE ANTICIPADO (ANT) EL AFILIADO tendrá derecho a dos congelaciones
+                                de mínimo siete (7) días y hasta (30) treinta días sin costo. El beneficio de las dos congelaciones
+                                se entregará
+                                una vez al año contadas a partir de la fecha de su afiliación y éstas no son acumulables año a año.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <table style="width: 95%;" align="center">
+                <tr>
+                    <td style="text-align: justify;">
+                        <p>
+                            <br><br><b><u> CONDICIONES:</u></b>
+                            Toda congelación
+                            deberá́
+                            solicitarse por parte del AFILIADO el mes anterior a la fecha efectiva
+                            de esta. La congelación
+                            deberá́
+                            solicitarse a través de la página web
+                            https://bodytech.com.co/perfil/novedades/.
+                            EL AFILIADO no
+                            podrá́
+                            ingresar a la sede durante el tiempo congelado. En caso de que EL AFILIADO desista
+                            de la congelación, para ser reactivado, pagará el cien por ciento (100%) de los días restantes del
+                            mes que
+                    </p><br>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <table style="width: 95%; position: relative; height: 30px; font-size: 15px;" align="center">
+                <tr>
+                    <td>
+                        <p style="margin-bottom: 20px;">Documento: <?php echo $document_type; ?></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Nombres y apellidos: <?php echo $name; ?></p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <p>Numero: <?php echo $document_number; ?></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Firma beneficiario: <?php echo $name; ?></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>El presente documento se firma : <?php echo $contract_date; ?></p><br><br>
+                    </td>
+                </tr>    
+            </table>  
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="font-size: 10px;">
+            <br><br><br>
+            <?php echo $timestamp; ?>
+        </td>
+    </tr>
+
+</table>

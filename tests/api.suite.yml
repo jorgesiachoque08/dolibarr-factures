@@ -1,0 +1,6 @@
+actor: ApiTester
+modules:
+    enabled:
+        - REST:
+            url: http://localhost:4000
+            depends: PhpBrowser
